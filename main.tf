@@ -5,7 +5,7 @@ resource "mongodbatlas_project" "mongodb_project" {
 
 resource "mongodbatlas_cluster" "mongodb_cluster" {
   project_id                   = mongodbatlas_project.mongodb_project.id
-  name                         = "atlasClusterName"
+  name                         = "cluster_techchallenge"
   provider_name                = "TENANT"
   backing_provider_name        = "AWS"
   provider_region_name         = "US_EAST_1"
