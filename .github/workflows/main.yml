@@ -1,9 +1,10 @@
 name: Deploy
 
+
 on:
   push:
     branches:
-    - **
+    - '*'
 
 jobs:
   deploy_lambda:
