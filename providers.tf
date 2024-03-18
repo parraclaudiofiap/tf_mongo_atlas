@@ -15,10 +15,10 @@ terraform {
  }
 
 provider "mongodbatlas" {
-  public_key  = local.db_creds.mongodb_atlas_api_pub_key
-  private_key = local.db_creds.mongodb_atlas_api_pri_key
+  public_key  = local.db_secrets.mongodb_atlas_api_pub_key
+  private_key = local.db_secrets.mongodb_atlas_api_pri_key
 }
 
 provider "aws" {
-  region = var.aws_default_region
+  region = "us-east-1"
 }
