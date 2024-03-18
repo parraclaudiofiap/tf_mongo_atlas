@@ -7,7 +7,7 @@ on:
     - '*'
 
 jobs:
-  deploy_lambda:
+  deploy_infra:
     runs-on: ubuntu-latest
 
     steps:
