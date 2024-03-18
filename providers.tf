@@ -2,7 +2,7 @@
   backend "s3" {
     bucket = "fiapterraform"
     key    = "mongodb/terraform.tfstate"
-    region = var.aws_default_region
+    region = "us-east-1"
   }
 }
 
